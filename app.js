@@ -1,8 +1,8 @@
 var app = require('express')();
-var	client = require('redis').createClient();
+var client = require('redis').createClient();
 var sleep = require('sleep');
 
-var	initialValue = 0;
+var initialValue = 0;
 var REDIS_KEY = 'requests';
 
 var tryUpdate = function(cb) {
